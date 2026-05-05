@@ -1,4 +1,8 @@
 @import 'tailwindcss' source(none);
 @source '../**/*.{js,ts,jsx,tsx}';
-
+@layer components {
+  .header-no-select {
+    @apply select-none;
+  }
+}
 @import 'tw-animate-css';

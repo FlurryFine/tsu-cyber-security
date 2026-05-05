@@ -44,7 +44,7 @@ export function Header({ onMenuClick }: HeaderProps) {
   };
 
   return (
-    <header className="h-16 border-b border-[var(--border-primary)] bg-[var(--bg-primary)] px-4 md:px-6 flex items-center justify-between shadow-sm">
+    <header className="select-none h-16 border-b border-[var(--border-primary)] bg-[var(--bg-primary)] px-4 md:px-6 flex items-center justify-between shadow-sm">
       <div className="flex items-center gap-2 md:gap-4">
         {!isHomepage && (
           <motion.button
@@ -75,7 +75,6 @@ export function Header({ onMenuClick }: HeaderProps) {
             {t.appName}
           </motion.h1>
         </div>
-        {/* Mobile search */}
         <form onSubmit={handleSearch} className="relative md:hidden ml-1">
           <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[var(--text-secondary)]" />
           <input
@@ -89,7 +88,6 @@ export function Header({ onMenuClick }: HeaderProps) {
       </div>
 
       <div className="flex items-center gap-3">
-        {/* Desktop search */}
         <form onSubmit={handleSearch} className="relative hidden md:block">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--text-secondary)]" />
           <input
@@ -101,7 +99,6 @@ export function Header({ onMenuClick }: HeaderProps) {
           />
         </form>
 
-        {/* Language toggle */}
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
