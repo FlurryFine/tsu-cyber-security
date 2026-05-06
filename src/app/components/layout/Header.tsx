@@ -26,6 +26,12 @@ export function Header({ onMenuClick }: HeaderProps) {
     if (EASTER_EGG_PHRASES.includes(val.toLowerCase())) {
       setSearchQuery('');
       triggerBSOD();
+      return;
+    }
+    const xssPattern = /<script|alert\(|onerror=|javascript:|onload=/i;
+    if (xssPattern.test(val)) {
+      setSearchQuery('');
+      alert("А ты быстро учишься, но так делать на этом сайте не надо.😉");
     }
   };
 

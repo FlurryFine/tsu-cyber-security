@@ -174,7 +174,6 @@ export function BrokenAccessControl() {
         animate="visible"
         className="bg-[var(--bg-primary)] border border-[var(--border-primary)] rounded-xl p-6 shadow-sm"
       >
-        {/* Section header with restart button */}
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-[var(--text-primary)]">
             {language === 'en' ? 'Interactive Demonstration' : 'Интерактивная демонстрация'}

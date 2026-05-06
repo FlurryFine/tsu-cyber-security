@@ -35,7 +35,6 @@ export function Sidebar({ isOpen }: SidebarProps) {
       className="overflow-hidden shrink-0 bg-[var(--bg-primary)]"
     >
       <div className="w-64 h-full border-r border-[var(--border-primary)] flex flex-col overflow-hidden">
-        {/* Navigation items */}
         <nav className="p-4 space-y-1 flex-1 overflow-y-auto">
           {navItems.map(({ path, label, icon: Icon }, index) => (
             <motion.div

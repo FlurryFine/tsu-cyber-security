@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowLeft, Key, Shield, AlertTriangle, RefreshCw } from 'lucide-react';
 import { Link } from 'react-router';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence, Variants } from 'motion/react';
 import { useTheme } from '../../../context/ThemeContext';
 import { translations } from '../../../translations';
 
@@ -28,12 +28,12 @@ export function AuthenticationFailures() {
     }
   };
 
-  const sectionVariants = {
+  const sectionVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,
-      transition: { delay: i * 0.08, duration: 0.3 },
+      transition: { delay: i * 0.08, duration: 0.3, ease: 'easeOut' },
     }),
   };
 
@@ -141,7 +141,6 @@ export function AuthenticationFailures() {
         </div>
 
         <div className="space-y-4">
-          {/* Brute force scenario */}
           <motion.div whileHover={{ scale: 1.01 }} className="p-4 bg-red-50 border border-red-200 rounded-lg">
             <h3 className="text-red-800 mb-2">
               {language === 'en' ? 'Credential Stuffing / Brute Force' : 'Перебор учётных данных / Brute Force'}
@@ -212,8 +211,7 @@ export function AuthenticationFailures() {
               </motion.div>
             )}
           </AnimatePresence>
-
-          {/* Session hijacking */}
+          
           <motion.div whileHover={{ x: 4 }} className="p-4 bg-orange-50 border border-orange-200 rounded-lg">
             <h3 className="text-orange-800 mb-2">
               {language === 'en' ? 'Session Hijacking' : 'Перехват сессии'}

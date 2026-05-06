@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { Lock, Terminal, AlertTriangle } from 'lucide-react';
 import { motion } from 'motion/react';
-import { useTheme } from '../context/ThemeContext';
-import { translations } from '../translations';
+import { useTheme } from '../../context/ThemeContext';
+import { translations } from '../../translations';
 
 export function OWASPLab() {
   const { language } = useTheme();

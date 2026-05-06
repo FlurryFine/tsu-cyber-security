@@ -79,7 +79,6 @@ export function Homepage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-6 bg-[#ffffff]">
       <div className="max-w-6xl w-full">
-        {/* Hero */}
         <motion.div
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -196,7 +195,7 @@ export function Homepage() {
           })}
         </div>
 
-        {/* News button */}
+        {/* Анимация новостной кнопки */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -238,7 +237,7 @@ export function Homepage() {
           </motion.button>
         </motion.div>
 
-        {/* News section */}
+        {/* Анимация секции новостей */}
         <AnimatePresence>
           {showNews && (
             <motion.div

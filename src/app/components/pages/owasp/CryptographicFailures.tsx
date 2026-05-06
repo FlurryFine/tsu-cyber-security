@@ -131,7 +131,6 @@ export function CryptographicFailures() {
         transition={{ delay: 0.12, duration: 0.3 }}
         className="bg-[var(--bg-primary)] border border-[var(--border-primary)] rounded-xl p-6 shadow-sm"
       >
-        {/* Header with restart */}
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-[var(--text-primary)]">
             {language === 'en' ? 'Interactive Password Hashing Comparison' : 'Сравнение методов хеширования паролей'}

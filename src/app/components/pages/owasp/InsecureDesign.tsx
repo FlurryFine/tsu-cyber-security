@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowLeft, Shield, AlertCircle, Lock, RefreshCw } from 'lucide-react';
 import { Link } from 'react-router';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence, Variants } from 'motion/react';
 import { useTheme } from '../../../context/ThemeContext';
 import { translations } from '../../../translations';
 
@@ -39,7 +39,7 @@ export function InsecureDesign() {
     }
   };
 
-  const sectionVariants = {
+  const sectionVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: (i: number) => ({
       opacity: 1,

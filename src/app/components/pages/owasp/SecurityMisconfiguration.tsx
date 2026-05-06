@@ -231,7 +231,7 @@ Environment: Production Server (Ubuntu 20.04, IP: 10.0.1.45)`
                 <strong>{language === 'en' ? 'Vulnerability:' : 'Уязвимость:'}</strong>{' '}
                 {language === 'en'
                   ? 'System still uses factory default credentials. An attacker could gain immediate administrative access by trying common username/password combinations.'
-                  : 'Система все еще использует заводские учетные данные по умолча��ию. Атакующий может получить немедленный административный доступ, попробовав распространенные комбинации логина/пароля.'}
+                  : 'Система все еще использует заводские учетные данные по умолчанию. Атакующий может получить немедленный административный доступ, попробовав распространенные комбинации логина/пароля.'}
               </p>
             </motion.div>
           </motion.div>
