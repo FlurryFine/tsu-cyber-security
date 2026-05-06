@@ -94,14 +94,18 @@
     
     ```
     docker build -t tsu-cyber-security .
-    docker run -p 80:80 tsu-cyber-security
+    docker run -d -p 8080:80 --name tsu-cyber-security tsu-cyber-security
 
     ```
     
-4. **Сайт**: Откройте `localhost:80` в браузере.
+4. **Сайт**: Откройте `localhost:8080` в браузере.
 
-5. **Закрытие**: Чтобы закрыть нажмите в терминале Ctrl+C
+5. **Закрытие**: Чтобы закрыть напишите в терминале 
 
+    ```
+    docker stop tsu-cyber-security
+    ```
+    
 ---
 
 ## 👥 Наша команда
